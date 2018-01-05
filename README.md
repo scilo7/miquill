@@ -15,3 +15,5 @@ m.mount(document.getElementById('app'),
     { view: () => m(Miquill, {options: options, content: content}) }
 )
 ```
+
+See example and docs https://rawgit.com/scilo7/miquill/master/docs/index.html

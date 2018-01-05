@@ -4,7 +4,7 @@ A Quill component for Mithril
 # Usage
 
 ```javascript
-import Miquill from "../index"
+import Miquill from "miquill"
 import m from "mithril"
 import stream from "mithril/stream"
 

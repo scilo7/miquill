@@ -1,4 +1,4 @@
-import Miquill from "../index"
+import Miquill from "../dist/miquill"
 import m from "mithril"
 import stream from "mithril/stream"
 

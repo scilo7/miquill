@@ -3,8 +3,24 @@ const path = require('path');
 module.exports = {
   entry: './index.js',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist')
+    filename: 'miquill.js',
+    path: path.resolve(__dirname, '../dist'),
+    library: 'miquill',
+    libraryTarget: 'commonjs2'
+  },
+  externals: {
+    mithril: {
+      commonjs: 'mithril',
+      commonjs2: 'mithril',
+      amd: 'mithril',
+      root: 'm'
+    },
+    quill: {
+      commonjs: 'quill',
+      commonjs2: 'quill',
+      amd: 'quill',
+      root: 'Quill'
+    },
   },
   devtool: 'inline-source-map',
   resolve: {
